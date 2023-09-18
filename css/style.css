@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Poppins:wght@400;500&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -39,6 +39,7 @@ text-align: right;
 }
 .site-title{
   width: 150px;
+  font-family: 'Great Vibes', cursive;
 }
 
 
@@ -320,7 +321,7 @@ color:#fff
 .about{
   width: 80%;
   margin:auto;
-  padding-top: 80px;
+  padding-top: 20px;
 }
 .about-title{
   margin-top: 100px;
@@ -523,8 +524,17 @@ font-weight: 400;
   .nav-links ul{
     padding: 30px;
   }
+  .offer{
+    padding-top: 50px;
+  }
   .row{
     flex-direction: column;
+  }
+  .testimonials{
+    padding-top: 50px;
+  }
+  .brands{
+    padding-top: 50px;
   }
   .extra{
     margin: 50px auto 10px;
