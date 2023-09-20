@@ -86,6 +86,9 @@ nav .fa-solid{
   text-align: center;
   padding-top: 100px;
 }
+.current-page{
+  border-bottom: #fff 2px solid;
+}
 h1{
   font-size: 36px;
   font-weight: 600;
@@ -523,6 +526,9 @@ font-weight: 400;
   }
   .nav-links ul{
     padding: 30px;
+  }
+  .current-page{
+    border-bottom: #000 2px solid;
   }
   .offer{
     padding-top: 50px;

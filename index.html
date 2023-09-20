@@ -17,7 +17,7 @@
       <div class="nav-links" id="navLinks">
         <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
         <ul class="nav_ul">
-          <li><a href="">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <li><a href="./html/about.html">About</a></li>
           <li><a href="./html/product.html">Product</a></li>
           <li><a href="./html/contact.html">Contact</a></li>
@@ -182,6 +182,16 @@
     function hideMenu(){
       navLinks.style.right = "-200px";
     }
+    var currentURL = window.location.href;
+
+var navLink = document.querySelectorAll('nav ul li a');
+
+
+for (var i = 0; i < navLink.length; i++) {
+  if (navLink[i].href === currentURL) {
+    navLink[i].classList.add('current-page'); 
+  }
+}
   </script>
 </body>
 </html>
