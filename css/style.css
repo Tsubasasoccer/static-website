@@ -413,7 +413,7 @@ form button {
   flex-basis: 48%;
   margin-bottom: 30px;
 }
-.contact-col div {
+.contact-col .address {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
