@@ -5,9 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  --main-color: white;
+  --background-color: white;
+  --section-width: 80%;
+}
 a{
   text-decoration: none;
-  color: white;
+  color: var(--main-color);
 }
 .header{
   min-height: 100vh;
@@ -45,7 +50,7 @@ text-align: right;
 
 .text-box{
   width: 90%;
-  color: white;
+  color: var(--main-color);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -64,7 +69,7 @@ text-align: right;
 .main-btn{
   display: inline-block;
   text-decoration:none;
-  color:white;
+  color:var(--main-color);
   border: 1px solid white;
   padding: 12px 34px;
   font-size: 13px;
@@ -73,7 +78,7 @@ text-align: right;
   cursor: pointer;
 }
 .main-btn:hover{
-  background: white;
+  background: var(--background-color);
   color:black;
   transition: 1s;
 }
@@ -125,7 +130,7 @@ h3{
 }
 /* new */
 .new{
-  width: 80%;
+  width: var(--section-width);
   margin: auto;
   text-align: center;
   padding-top: 50px;
@@ -157,7 +162,7 @@ h3{
 .layer h3{
   width: 100%;
   font-weight: 500;
-  color: white;
+  color: var(--main-color);
   font-size: 26px;
   bottom: 0;
   left: 50%;
@@ -175,7 +180,7 @@ h3{
 }
 /* brands */
 .brands{
-  width: 80%;
+  width: var(--section-width);
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -204,7 +209,7 @@ h3{
 }
 /* testimonials */
 .testimonials{
-  width: 80%;
+  width: var(--section-width);
   margin: auto;
   padding-top: 100px;
   text-align: center;
@@ -248,7 +253,7 @@ h3{
 /* extra */
 .extra{
   margin: 100px auto 50px;
-  width: 80%;
+  width: var(--section-width);
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1626277890580-1924372c21fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2NlbnR8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=1000&q=60") ;
   background-position: center;
   background-size: cover;
@@ -257,7 +262,7 @@ h3{
   padding: 100px 0;
 }
 .extra h1{
-  color: #fff;
+  color: var(--main-color);
   margin-bottom: 40px;
   padding: 0;
 }
@@ -318,18 +323,33 @@ form button{
   background-position: center;
 background-size: cover;
 text-align: center;
-color:#fff
+color:var(--main-color);
   
 }
 .about{
-  width: 80%;
+  width: var(--section-width);
   margin:auto;
   padding-top: 20px;
 }
 .about-title{
   margin-top: 100px;
   font-size: 50px;
-}
+    animation: title-fade-in 3s ease 0s 1 normal running forwards;
+  }
+  .about-title:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes title-fade-in {
+    0% {
+      opacity: 0;
+ 
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 .about-col{
   flex-basis: 48%;
   padding: 30px 2px;
@@ -365,7 +385,7 @@ color:#fff
 }
 /* contact us */
 .location{
-  width: 80%;
+  width: var(--section-width);
   margin:auto;
   padding: 80px 0;
 }
@@ -373,7 +393,7 @@ color:#fff
   width: 100%;
 }
 .contact-us{
-  width: 80%;
+  width: var(--section-width);
   margin:auto;
 }
 .contact-col{
@@ -414,7 +434,7 @@ font-weight: 400;
 }
 /* product */
 .product-about{
-  width: 80%;
+  width: var(--section-width);
   margin:auto;
   padding-top: 40px;
 }
@@ -439,7 +459,7 @@ font-weight: 400;
 }
 /* seller */
 .seller{
-  width: 80%;
+  width: var(--section-width);
   margin: auto;
   text-align: center;
   padding-top: 100px;
@@ -512,7 +532,7 @@ font-weight: 400;
   }
   nav .fa-bars{
     display: block;
-    color:white;
+    color:var(--main-color);
     margin: 10px;
     font-size: 22px;
     cursor: pointer;
