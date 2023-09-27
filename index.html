@@ -100,6 +100,7 @@
         </div>
       </div>
     </section>
+    <!-- brands section -->
     <section class="brands">
       <h1>Famous brands</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -232,8 +233,8 @@
       </div>
     </section>
 
-    <!-- javascript for toggle menu -->
     <script>
+      // hamburger menu
       let navLinks = document.getElementById("navLinks");
       function showMenu() {
         navLinks.style.right = "0";
@@ -241,6 +242,7 @@
       function hideMenu() {
         navLinks.style.right = "-200px";
       }
+      //highlight current nav page
       var currentURL = window.location.href;
 
       var navLink = document.querySelectorAll("nav ul li a");

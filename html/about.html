@@ -47,6 +47,7 @@
     </div>
 
   </section>
+  <!-- extra section -->
   <section class="extra">
     <h1>Take a Fragrance Finder Quiz</h1>
     <a href="https://www.sephora.com/ca/en/beauty/fragrance-gift-guide" class="main-btn" target="_blank">Try Now</a>
@@ -83,26 +84,25 @@
   </section>
 
 
-  <!-- javascript for toggle menu -->
   <script>
-
+    // hamburger menu
     let navLinks = document.getElementById("navLinks");
-    function showMenu(){
+    function showMenu() {
       navLinks.style.right = "0";
     }
-    function hideMenu(){
+    function hideMenu() {
       navLinks.style.right = "-200px";
     }
+    //highlight current nav page
     var currentURL = window.location.href;
 
-var navLink = document.querySelectorAll('nav ul li a');
+    var navLink = document.querySelectorAll("nav ul li a");
 
-
-for (var i = 0; i < navLink.length; i++) {
-  if (navLink[i].href === currentURL) {
-    navLink[i].classList.add('current-page'); 
-  }
-}
+    for (var i = 0; i < navLink.length; i++) {
+      if (navLink[i].href === currentURL) {
+        navLink[i].classList.add("current-page");
+      }
+    }
   </script>
 </body>
 </html>
