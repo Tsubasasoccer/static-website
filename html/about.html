@@ -14,7 +14,7 @@
 
   <body>
     <!-- header -->
-    <header>
+    <section class="sub-header">
       <nav>
         <h1 class="site-title"><a href="index.html">Perfume</a></h1>
         <div class="nav-links" id="navLinks">
@@ -30,7 +30,7 @@
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
       <h1 class="about-title">About Us</h1>
-    </header>
+    </section>
     <!-- about us content -->
     <section class="about">
       <div class="row">
@@ -97,25 +97,6 @@
       </div>
     </section>
 
-    <script>
-      // hamburger menu
-      let navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-      //highlight current nav page
-      var currentURL = window.location.href;
-
-      var navLink = document.querySelectorAll("nav ul li a");
-
-      for (var i = 0; i < navLink.length; i++) {
-        if (navLink[i].href === currentURL) {
-          navLink[i].classList.add("current-page");
-        }
-      }
-    </script>
+    <script src="../js/style.js"></script>
   </body>
 </html>
