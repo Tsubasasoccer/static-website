@@ -216,8 +216,13 @@ h3{
   padding-top: 100px;
   text-align: center;
 }
+.grid{
+  margin-top: 5%;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(271px, 1fr));
+}
 .testimonial-col{
-  flex-basis: 44%;
   border-radius: 10px;
   margin-bottom: 5%;
   text-align: left;
@@ -343,20 +348,20 @@ color:var(--main-color);
   font-size: 50px;
     animation: title-fade-in 3s ease 0s 1 normal running forwards;
   }
-  .about-title:hover {
-    animation-play-state: paused;
-  }
   
   @keyframes title-fade-in {
     0% {
       opacity: 0;
- 
+      
     }
     100% {
       opacity: 1;
     }
   }
-
+  
+  .about-title:hover {
+    animation-play-state: paused;
+  }
 .about-col{
   flex-basis: 48%;
   padding: 30px 2px;
@@ -562,6 +567,9 @@ font-weight: 400;
   }
   .row{
     flex-direction: column;
+  }
+  .grid{
+    gap: 20px;
   }
   .testimonials{
     padding-top: 50px;
